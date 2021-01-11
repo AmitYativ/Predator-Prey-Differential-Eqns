@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# Author: Amit Yativ
 
 from pylab import *
 from scipy import integrate
