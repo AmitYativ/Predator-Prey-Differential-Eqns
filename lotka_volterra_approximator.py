@@ -221,6 +221,7 @@ def adamsPredictCorrect(t0, tn, init_cond_x, init_cond_y, h):
                                      * dx_m1 + dx_m2) / 24.0, 8)
     return np.array([x,y])
 
+# Graph results
 def graphIt(t,arr, method_used):
     p.plot(t, arr[0], 'r-', label='Rabbits (Prey)')
     p.plot(t, arr[1], 'b-', label='Foxes (Predator)')
@@ -228,7 +229,7 @@ def graphIt(t,arr, method_used):
     p.legend(loc='upper left', fontsize = 'small')
     p.xlabel('Time')
     p.ylabel('Population]')
-    p.title('Evolution of Fox and Rabbit Populations Via {} Method: '.format(method_used))
+    p.title('Evolution of Fox and Rabbit Populations Via {}: '.format(method_used))
     p.show()
 
 if __name__ == '__main__':
