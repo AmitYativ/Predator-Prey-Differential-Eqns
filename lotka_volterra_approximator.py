@@ -228,7 +228,7 @@ def graphIt(t,arr, method_used):
     p.grid()
     p.legend(loc='upper left', fontsize = 'small')
     p.xlabel('Time')
-    p.ylabel('Population]')
+    p.ylabel('Population')
     p.title('Evolution of Fox and Rabbit Populations Via {}: '.format(method_used))
     p.show()
 
